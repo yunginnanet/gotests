@@ -1,0 +1,94 @@
+{{define "function"}}
+{{- $f := .}}
+
+func {{.TestName}}(t *testing.T) {
+	{{- with .Receiver}}
+		{{- if .IsStruct}}
+			{{- if .Fields}}
+				// Define mock here if needed
+				{{- range .Fields}}
+					// m{{Field .}} := ...
+				{{- end}}
+			{{- end}}
+		{{- end}}
+	{{- end}}
+	
+	{{- with .Receiver}}
+		{{- if .IsStruct}}
+			{{- if .Fields}}
+				type fields struct {
+				{{- range .Fields}}
+					{{Field .}} {{.Type}}
+				{{- end}}
+				}
+			{{- end}}
+		{{- end}}
+	{{- end}}
+
+	{{- with .Receiver}}
+		{{- if .IsStruct}}
+			{{- if .Fields}}
+				_fields := fields {
+				{{- range .Fields}}
+					{{Field .}}: m{{Field .}},
+				{{- end}}
+				}
+			{{- end}}
+		{{- end}}
+	{{- end}}
+
+	{{- if .TestParameters}}
+	type args struct {
+		{{- range .TestParameters}}
+				{{Param .}} {{.Type}}
+		{{- end}}
+	}
+	{{- end}}
+
+    type wants struct {
+		{{- range .TestResults}}
+			{{Want .}} {{.Type}}
+		{{- end}}
+		{{- if .ReturnsError}}
+			wantErr bool
+		{{- end}}
+    }
+    runFunc := func(t *testing.T,{{with .Receiver}} {{if .IsStruct}}fields fields,{{- end}}{{- end}} args args, w wants) {
+			{{- with .Receiver}}
+				{{- if .IsStruct}}
+					{{Receiver .}} := {{if .Type.IsStar}}&{{end}}{{.Type.Value}}{
+					{{- range .Fields}}
+						{{.Name}}: fields.{{Field .}},
+					{{- end}}
+					}
+				{{- end}}
+			{{- end}}
+			{{- range .Parameters}}
+				{{- if .IsWriter}}
+					{{Param .}} := &bytes.Buffer{}
+				{{- end}}
+			{{- end}}
+			{{- if not .ReturnsError }}
+				{{template "results" $f}} {{template "call" $f}}
+			{{- end}}
+			{{- if .ReturnsError}}
+				if {{if .OnlyReturnsError}} err := {{template "call" $f}}; {{end}} (err != nil) != w.wantErr {
+					t.Errorf("{{template "message" $f}} error = %v, wantErr %v", {{template "inputs" $f}} err, w.wantErr)
+					{{- if .TestResults}}
+						{{if .Subtests }}return{{else}}continue{{end}}
+					{{- end}}
+				}
+			{{- end}}
+			{{- range .TestResults}}
+				if diff := cmp.Diff({{Got .}}, w.{{Want .}}); diff != "" {
+				t.Errorf("{{template "message" $f}} {{if $f.ReturnsMultiple}}{{Got .}} {{end}}!= want: %s", diff)
+				}
+			{{- end}}
+	}
+
+	t.Run("Test case #1: TODO: Add testcase here", func(t *testing.T) {
+		runFunc(t, {{with .Receiver}} {{if .IsStruct}}_fields,{{- end}}{{- end}} args{}, wants{})
+	})
+}
+
+{{end}}

@@ -209,73 +209,197 @@ func FSMustString(useLocal bool, name string) string {
 
 var _escData = map[string]*_escFile{
 
-	"/test/call.tmpl": {
+	"/.tmpl.go.swp": {
+		name:    ".tmpl.go.swp",
+		local:   ".tmpl.go.swp",
+		size:    1024,
+		modtime: 1661508452,
+		compressed: `
+H4sIAAAAAAAC/0oyyEvMy1cw0zNhQAHl4gwM2YmV+cUMhEFaRlZ+XiphlSWpuQU5iSWpxfoluQU5eun5
+DKNgFIyCgQSAAAAA//9NFFSEAAQAAA==
+`,
+	},
+
+	"/astronaut1712/call.tmpl": {
 		name:    "call.tmpl",
-		local:   "test/call.tmpl",
-		size:    0,
-		modtime: 1615633710,
+		local:   "astronaut1712/call.tmpl",
+		size:    236,
+		modtime: 1661507924,
 		compressed: `
-H4sIAAAAAAAC/wEAAP//AAAAAAAAAAA=
+H4sIAAAAAAAC/0SOQcrCQAyF9/8pQuniF0oOIHiAbkRUdB2maQ20o2RGRYbcXabUzurBx5f3klLHvXiG
+ytE4VmYpvSXeAI/sWF6smUgP/h4B23CK+nQxM/Zdjp8GaIYrxT1NbPafkpIfGGppoOYRtjvAAylNHFnD
+Ul2LWQPrbRm7qsT8AOkQSvd8n+dmFc+fB2MbLqRCnTgzxOLOsVny7xsAAP//GjDYLOwAAAA=
 `,
 	},
 
-	"/test/function.tmpl": {
+	"/astronaut1712/function.tmpl": {
 		name:    "function.tmpl",
-		local:   "test/function.tmpl",
-		size:    19,
-		modtime: 1615633710,
+		local:   "astronaut1712/function.tmpl",
+		size:    2240,
+		modtime: 1661507924,
 		compressed: `
-H4sIAAAAAAAC/6qu1tdSSFRIzs/NTc0rUdDSr+UCBAAA//+6o7WcEwAAAA==
+H4sIAAAAAAAC/6xVTW/bOBA9S79iok0Ca6FVsFcFPrRIUvTQpnCC5hgo0tAhKlMGScUwCP73YkhRtuKP
+Gmgutjyc0Zs373FsTI2MC4SEdaLSvBWJtbEx/8E5g2IKubVxTEdgTP6ISn8vF2jtRMO/GpXmYp4/pmDi
+iEpWXL9CPsMK+RtKa+PIhTmD/Kt60LKrtAsO0TuOTa18LLq6ghvfy6KtfsErSqQkgVhj7TKoTJZiju8q
+qXRhjItRx67xPB9qUNQb3PBj63nr8SOI6PUSgbkIKJdMAzrW/3bvNOf1EvujUfvRaSQ+gsNz338xDUxO
+p1CMxMj+kge1Rsb7UcpygRqlg3QzLuV8NOGt5nYrHKIL7Yx5C33cAACAQ1qVQh+DmqHqGq3CQJ9KoY+h
+DMRmqDsp1K2UrZcoIqRbKeGlbZtREfXiP2Un7uhGkjadqEZ3MTPmvfBgzFj0XlD/lQ0Iw4OfK31ksPLU
+Uy//AV8dchbFQ2K4l74ZGopLLqW1l8b0Dfj4z7Lp0FoTXnHAcZExud9GRc8l37HdO99F9vhO2Abb457A
+8UlyPVAfuaqYwuXLWqPKP3eMoTSnANKSa/XYDDCAalwsm1IjJNKbLIFz5lTdnFRl0/jwIYA9Tos469W4
+F816fA4opVdrH8g19IrBhPLOpiB4k9L3Kg/+7dXTuXsjmyTbr1qgUuUceyboCE/h4i2DUH7xlmQjdC6W
+3cAdpcw2WOlG6rAsRvfRndHJQ/dCF0WBtdLRNQYbhdZWrdBcdNjT2medo17ZheQMas7cX2i1WOY3nLGJ
+MV9atxao982SSK996tkUkqSf2yljc5zOWVD2W9dovmzo4gScIBMJUwpdwIVKMgeW7uVEK1fns05MEmIE
+VakQ/vm/gMf7m/sCPtU10PxcmP6ek2x3AflN0a+oiSYR/7iQno+vImO9L5SxaRzZNLZxHJT6HQAA///9
+NOmAwAgAAA==
 `,
 	},
 
-	"/test/header.tmpl": {
+	"/astronaut1712/header.tmpl": {
 		name:    "header.tmpl",
-		local:   "test/header.tmpl",
-		size:    0,
-		modtime: 1615633710,
+		local:   "astronaut1712/header.tmpl",
+		size:    173,
+		modtime: 1661507924,
 		compressed: `
-H4sIAAAAAAAC/wEAAP//AAAAAAAAAAA=
+H4sIAAAAAAAC/0TMMQ7CMAwF0N2niDLB0PQQTCyIK4TUuBU4jkqYrH93pFbAZvn//9wnvi+VQ5w5T7xG
+gNzXXIVDOpkq1/4C3NMWcJ3CAFDL5ZGFg3u67idAtGiztYfDXzhvnx24ZGVgn/T5ywEUZenz+5aK6Shm
+8uRRbCjaxqIt0vFX/AQAAP//+VGmmq0AAAA=
 `,
 	},
 
-	"/test/inline.tmpl": {
+	"/astronaut1712/inline.tmpl": {
 		name:    "inline.tmpl",
-		local:   "test/inline.tmpl",
-		size:    0,
-		modtime: 1615633710,
+		local:   "astronaut1712/inline.tmpl",
+		size:    49,
+		modtime: 1661507924,
 		compressed: `
-H4sIAAAAAAAC/wEAAP//AAAAAAAAAAA=
+H4sIAAAAAAAC/6quTklNy8xLVVDKzMvJzEtVqq1VqK4uSc0tyEksSVVQSk7MyVFS0AOLpual1NYCAgAA
+//+q60H/MQAAAA==
 `,
 	},
 
-	"/test/inputs.tmpl": {
+	"/astronaut1712/inputs.tmpl": {
 		name:    "inputs.tmpl",
-		local:   "test/inputs.tmpl",
-		size:    0,
-		modtime: 1615633710,
+		local:   "astronaut1712/inputs.tmpl",
+		size:    152,
+		modtime: 1661507924,
 		compressed: `
-H4sIAAAAAAAC/wEAAP//AAAAAAAAAAA=
+H4sIAAAAAAAC/0yNMQoCQQxFrxKWLSUHEDyAneAJIptZptgomWz1yd1lRoupEh7/vw9sWqopLdU+Z7Ql
+E1gLXW/E/a2F7B3Ez/MV2qJlRrDJoRcC1LZ/Zi388GpxH5IOXWzXwcXl0FD/dcX3xsCgfWLyzOcbAAD/
+/468z9qYAAAA
 `,
 	},
 
-	"/test/message.tmpl": {
+	"/astronaut1712/message.tmpl": {
 		name:    "message.tmpl",
-		local:   "test/message.tmpl",
-		size:    0,
-		modtime: 1615633710,
+		local:   "astronaut1712/message.tmpl",
+		size:    201,
+		modtime: 1661507924,
 		compressed: `
-H4sIAAAAAAAC/wEAAP//AAAAAAAAAAA=
+H4sIAAAAAAAC/zyN4WqDQBCE//sUiyi0oPsAhT5A/xRpS/9f4mgW9GLuTkNY9t2DB/HXDDPDN6o9BvGg
+ckaMbkRJrVmhKgP5ayL+XU8JMUWz+sakCt+bqd4lXYh/cIZsCHvCf48F/O+mFWZ8DPnbzTB7y0Tugvj0
+5Zd1B6oG50dQJQ1VmOjjk7hzwc1ICLmXgSoxa16/9XZws7wXqi1l+wwAAP//kC65UskAAAA=
 `,
 	},
 
-	"/test/results.tmpl": {
+	"/astronaut1712/results.tmpl": {
 		name:    "results.tmpl",
-		local:   "test/results.tmpl",
-		size:    0,
-		modtime: 1615633710,
+		local:   "astronaut1712/results.tmpl",
+		size:    168,
+		modtime: 1661507924,
 		compressed: `
-H4sIAAAAAAAC/wEAAP//AAAAAAAAAAA=
+H4sIAAAAAAAC/1yNTQrCQAyFr/Iosyw9gOBS3HsDoRkJlAy8ma5C7i6pRcFVfr4vee6rVDXBROn7NvoU
+AXc+7SUoOqPIhssVy+ODI9y1omjEDHexNTf3NrBkc85a82DstH4jG1MW8uQ4hMbv0385A3/uUd8BAAD/
+/7BPz2GoAAAA
+`,
+	},
+
+	"/dotlou/call.tmpl": {
+		name:    "call.tmpl",
+		local:   "dotlou/call.tmpl",
+		size:    236,
+		modtime: 1661507260,
+		compressed: `
+H4sIAAAAAAAC/0yO0YrCQAxFfyWUPuxCyQcs7Af0ZVlU9DlMUw20o6RRkZB/lynV+nThzrlz4t5xL5mh
+SjQMVYT7XewEuOHEcmMtjfSQzwbYTlvTa7IIS+jOuSuvLxIwYm3xj0aO+HJXykeGWhqoeYCfX8B/UhrZ
+WKfl91oiGnhvV99BxcoNn755XWQziLvHhbGd9qRCnaQIxJWd43vJZwAAAP//s98A7uwAAAA=
+`,
+	},
+
+	"/dotlou/function.tmpl": {
+		name:    "function.tmpl",
+		local:   "dotlou/function.tmpl",
+		size:    1590,
+		modtime: 1661507260,
+		compressed: `
+H4sIAAAAAAAC/5RTT2/bPgw925+CCIoi/iFV7wF6+A3Lhl2aIQ3WwzAMqk1nxhw5lehtgcDvPuiP/yRx
+hi2XWJRIPvK9Z22BZaUQZmWrcqoaNWNOrb2DmxKWDyCY09RdgbVii4Ye5R6Z5wT/ERqq1E5sM7Bp4lJ+
+VvQNxAZzrH6gZk4TH65KEB/ME+k2Jx/so+8qrAsTYgkdDwilj4Dxj13d+FpLtcOzhMRaf3YgPbzjAeOV
+S0FVxFPfswuNvkefbiDjhv78ZdRfyT06PJXaxcyJMbuJpCqGWc/gxtHCX4+oNgPmruTlQFfA94t0zHyU
+Wu6RUJshJ65t6jqx1of+rdmo4AZNW1Pf7Fkquqg1hXWD1GplVlo3cXn464A5YbHSGtCFTzPZ0XB/D9v1
+2/US/i8KcExBLg0akTp2y0aDtVUJ80aDeGpfApVz1ZCj41F+xyLLmOHrAih3FFvri8d5wnObQvx1UPtK
+zCQ2rZpTLpweFuAscW4CiJjhbtjjlFaumOJCAR6mZ/d4QP9YaubbCD2uWXySdYvMtitxxSuJtSJ4dwmU
+i6BCMXLQYigwOCeZsNPFIfabEFg35rOuqJ/+RHjLB7h9ORIa8aYtS9T2bxpGowV616o+jiWVQd+ecH+o
+JSHMdNDqDG5Kr9DhJpd1HcLXWk0INtBy3pnZqTfQNtUgEucKaHxtK41i9drKek5OlWLkgoUrlP1p2RcG
+BJiqOdhyAda+b/xnNmXyM7kDZ6dy5pTTtJvgdwAAAP//izfJkDYGAAA=
+`,
+	},
+
+	"/dotlou/header.tmpl": {
+		name:    "header.tmpl",
+		local:   "dotlou/header.tmpl",
+		size:    142,
+		modtime: 1661507260,
+		compressed: `
+H4sIAAAAAAAC/0TMMQ7CMAyF4d2nsDrBQC7BxIK4gkUebYXiViGb9e6OlAi6/bL1voiM1+rQaYFl1ImU
+iGo+Q9N1KwXePmRE6g941gspuz3fNkMj0mMkKbKWfatNT4dw65cB3K2AHJO2/DhSzv/6BgAA///GzMM9
+jgAAAA==
+`,
+	},
+
+	"/dotlou/inline.tmpl": {
+		name:    "inline.tmpl",
+		local:   "dotlou/inline.tmpl",
+		size:    49,
+		modtime: 1661507260,
+		compressed: `
+H4sIAAAAAAAC/6quTklNy8xLVVDKzMvJzEtVqq1VqK4uSc0tyEksSVVQSk7MyVFS0AOLpual1NYCAgAA
+//+q60H/MQAAAA==
+`,
+	},
+
+	"/dotlou/inputs.tmpl": {
+		name:    "inputs.tmpl",
+		local:   "dotlou/inputs.tmpl",
+		size:    147,
+		modtime: 1661507260,
+		compressed: `
+H4sIAAAAAAAC/0yMQQoCMRAEvzIse5Q8QPAB3gRfEN2O5LCjTGZPzfxdEj3k1E3RXeSGUhWyVP0c3pYI
+ci1yvkjqtRbRt0u6Hw9H8xbhz6R5x0lI6PbfrCXdrKpfh6RDy/rC4NnyDof9vuQA3T4p5vgGAAD//ykp
+rjaTAAAA
+`,
+	},
+
+	"/dotlou/message.tmpl": {
+		name:    "message.tmpl",
+		local:   "dotlou/message.tmpl",
+		size:    201,
+		modtime: 1661507260,
+		compressed: `
+H4sIAAAAAAAC/zyN4WqDQBCE//sUiyi0oPsAhT5A/xRpS/9f4mgW9GLuTkNY9t2DB/HXDDPDN6o9BvGg
+ckaMbkRJrVmhKgP5ayL+XU8JMUWz+sakCt+bqd4lXYh/cIZsCHvCf48F/O+mFWZ8DPnbzTB7y0Tugvj0
+5Zd1B6oG50dQJQ1VmOjjk7hzwc1ICLmXgSoxa16/9XZws7wXqi1l+wwAAP//kC65UskAAAA=
+`,
+	},
+
+	"/dotlou/results.tmpl": {
+		name:    "results.tmpl",
+		local:   "dotlou/results.tmpl",
+		size:    168,
+		modtime: 1661507260,
+		compressed: `
+H4sIAAAAAAAC/1yNTQrCQAyFr/Iosyw9gOBS3HsDoRkJlAy8ma5C7i6pRcFVfr4vee6rVDXBROn7NvoU
+AXc+7SUoOqPIhssVy+ODI9y1omjEDHexNTf3NrBkc85a82DstH4jG1MW8uQ4hMbv0385A3/uUd8BAAD/
+/7BPz2GoAAAA
 `,
 	},
 
@@ -283,7 +407,7 @@ H4sIAAAAAAAC/wEAAP//AAAAAAAAAAA=
 		name:    "call.tmpl",
 		local:   "testify/call.tmpl",
 		size:    241,
-		modtime: 1613754073,
+		modtime: 1661507246,
 		compressed: `
 H4sIAAAAAAAC/0SOQWrDQAxFryKMFy0YHaDQA3hTSlvatRjLrsCeFo2SEITuHsY4mdWHP2/el/vEs2SG
 LtG6dhHuF7FfwA9OLGfW2sgM+c8Ax/JpekoWYYbunKf6eicBI1qLb7RxxJO7Ul4Yehmg5xVeXgHfSWlj
@@ -295,7 +419,7 @@ Yy2HvZeIAR5/296PitUbzJB0KU2/K+riTuPX9Z9xLN+kQpOkCMTG7vF85C0AAP//ZQi8iPEAAAA=
 		name:    "function.tmpl",
 		local:   "testify/function.tmpl",
 		size:    2798,
-		modtime: 1616467003,
+		modtime: 1661507246,
 		compressed: `
 H4sIAAAAAAAC/5xWUW/cNgx+tn8FYQTFebiq7yn60GHtkJemSIL1oRgG9UzfjPl0N4necBD43wdRlu3z
 2VnTPOQsyiQ/8qM+y/sK68YgFNo5tNQcTQGvmXMiNVg2tAXvmxrUvWnPD0idNe6DtUfL7D3h4dRqQih2
@@ -319,7 +443,7 @@ nHO4HUWX/wIAAP//vN7yje4KAAA=
 		name:    "header.tmpl",
 		local:   "testify/header.tmpl",
 		size:    142,
-		modtime: 1616472631,
+		modtime: 1661507246,
 		compressed: `
 H4sIAAAAAAAC/0TMMQ7CMAyF4d2nsDrBQC7BxIK4gkUebYXiViGb9e6OlAi6/bL1voiM1+rQaYFl1ImU
 iGo+Q9N1KwXePmRE6g941gspuz3fNkMj0mMkKbKWfatNT4dw65cB3K2AHJO2/DhSzv/6BgAA///GzMM9
@@ -331,7 +455,7 @@ jgAAAA==
 		name:    "inline.tmpl",
 		local:   "testify/inline.tmpl",
 		size:    49,
-		modtime: 1613735787,
+		modtime: 1661507246,
 		compressed: `
 H4sIAAAAAAAC/6quTklNy8xLVVDKzMvJzEtVqq1VqK4uSc0tyEksSVVQSk7MyVFS0AOLpual1NYCAgAA
 //+q60H/MQAAAA==
@@ -342,7 +466,7 @@ H4sIAAAAAAAC/6quTklNy8xLVVDKzMvJzEtVqq1VqK4uSc0tyEksSVVQSk7MyVFS0AOLpual1NYCAgAA
 		name:    "inputs.tmpl",
 		local:   "testify/inputs.tmpl",
 		size:    177,
-		modtime: 1616467003,
+		modtime: 1661507246,
 		compressed: `
 H4sIAAAAAAAC/0yNMaoDMQxE+38KsWz58QECOUCaEMgJFCwvLqwESVsJ3T1YpHAlzWN4416pdSbYOn9O
 0y3CfW9wuUKZb2/Ab4PyPF9GarqyOw6qEWbFnbhGMA76h1/I3t7KQzrbLeUTCvJByVFwkJFoKlAOLe5J
@@ -354,7 +478,7 @@ H4sIAAAAAAAC/0yNMaoDMQxE+38KsWz58QECOUCaEMgJFCwvLqwESVsJ3T1YpHAlzWN4416pdSbYOn9O
 		name:    "message.tmpl",
 		local:   "testify/message.tmpl",
 		size:    201,
-		modtime: 1613735787,
+		modtime: 1661507246,
 		compressed: `
 H4sIAAAAAAAC/zyN4WqDQBCE//sUiyi0oPsAhT5A/xRpS/9f4mgW9GLuTkNY9t2DB/HXDDPDN6o9BvGg
 ckaMbkRJrVmhKgP5ayL+XU8JMUWz+sakCt+bqd4lXYh/cIZsCHvCf48F/O+mFWZ8DPnbzTB7y0Tugvj0
@@ -366,7 +490,7 @@ ckaMbkRJrVmhKgP5ayL+XU8JMUWz+sakCt+bqd4lXYh/cIZsCHvCf48F/O+mFWZ8DPnbzTB7y0Tugvj0
 		name:    "results.tmpl",
 		local:   "testify/results.tmpl",
 		size:    168,
-		modtime: 1613735787,
+		modtime: 1661507246,
 		compressed: `
 H4sIAAAAAAAC/1yNTQrCQAyFr/Iosyw9gOBS3HsDoRkJlAy8ma5C7i6pRcFVfr4vee6rVDXBROn7NvoU
 AXc+7SUoOqPIhssVy+ODI9y1omjEDHexNTf3NrBkc85a82DstH4jG1MW8uQ4hMbv0385A3/uUd8BAAD/
@@ -380,15 +504,15 @@ AXc+7SUoOqPIhssVy+ODI9y1omjEDHexNTf3NrBkc85a82DstH4jG1MW8uQ4hMbv0385A3/uUd8BAAD/
 		isDir: true,
 	},
 
-	"/test": {
-		name:  "test",
-		local: `test`,
+	"/astronaut1712": {
+		name:  "astronaut1712",
+		local: `astronaut1712`,
 		isDir: true,
 	},
 
-	"/test_empty": {
-		name:  "test_empty",
-		local: `test_empty`,
+	"/dotlou": {
+		name:  "dotlou",
+		local: `dotlou`,
 		isDir: true,
 	},
 
@@ -401,19 +525,29 @@ AXc+7SUoOqPIhssVy+ODI9y1omjEDHexNTf3NrBkc85a82DstH4jG1MW8uQ4hMbv0385A3/uUd8BAAD/
 
 var _escDirs = map[string][]os.FileInfo{
 
-	"./": {},
-
-	"test": {
-		_escData["/test/call.tmpl"],
-		_escData["/test/function.tmpl"],
-		_escData["/test/header.tmpl"],
-		_escData["/test/inline.tmpl"],
-		_escData["/test/inputs.tmpl"],
-		_escData["/test/message.tmpl"],
-		_escData["/test/results.tmpl"],
+	"./": {
+		_escData["/.tmpl.go.swp"],
 	},
 
-	"test_empty": {},
+	"astronaut1712": {
+		_escData["/astronaut1712/call.tmpl"],
+		_escData["/astronaut1712/function.tmpl"],
+		_escData["/astronaut1712/header.tmpl"],
+		_escData["/astronaut1712/inline.tmpl"],
+		_escData["/astronaut1712/inputs.tmpl"],
+		_escData["/astronaut1712/message.tmpl"],
+		_escData["/astronaut1712/results.tmpl"],
+	},
+
+	"dotlou": {
+		_escData["/dotlou/call.tmpl"],
+		_escData["/dotlou/function.tmpl"],
+		_escData["/dotlou/header.tmpl"],
+		_escData["/dotlou/inline.tmpl"],
+		_escData["/dotlou/inputs.tmpl"],
+		_escData["/dotlou/message.tmpl"],
+		_escData["/dotlou/results.tmpl"],
+	},
 
 	"testify": {
 		_escData["/testify/call.tmpl"],
